@@ -6,6 +6,15 @@
   height: 40vmin;
   pointer-events: none;
 }
+.input {
+  width: 400px;
+}
+
+.main {
+  width: 400px;
+  margin: auto;
+  margin-top: 10%;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

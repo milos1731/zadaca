@@ -1,0 +1,14 @@
+.buttons {
+  display: flex;
+  margin-top: 10%;
+  margin-left: 20%;
+}
+.button {
+  height: 40px;
+  width: 200px;
+}
+.count {
+  width: 100px;
+  text-align: center;
+  padding-top: 15px;
+}
