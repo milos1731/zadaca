@@ -7,6 +7,8 @@ import Task3 from "./components/Task3/Task3"
 import Task4 from "./components/Task4/Task4"
 import Task5 from "./components/Task5/Task5"
 import Task6 from "./components/Task6/Task6"
+import Task7 from "./components/Task7/Task7"
+
 
 
 
@@ -15,7 +17,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      screen: "Task6"
+      screen: "Task7"
     };
   }
   render() {
@@ -31,6 +33,8 @@ class App extends Component {
     if (screen === "Task4") ScreenComponent = Task4;
     if (screen === "Task5") ScreenComponent = Task5;
     if (screen === "Task6") ScreenComponent = Task6;
+    if (screen === "Task7") ScreenComponent = Task7;
+
 
 
     
@@ -64,6 +68,11 @@ class App extends Component {
             onClick={() => this.setState({ screen: "Task6" })}
           >
             Task6
+          </button>
+          <button
+            onClick={() => this.setState({ screen: "Task7" })}
+          >
+            Task7
           </button>
           </div>
         <ScreenComponent />
