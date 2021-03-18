@@ -1,8 +1,11 @@
 import React, {Component} from "react";
 import "./Task7.css";
+import "./InputTodo/InputTodo.css"
 import TodoList from "./TodoList/TodoList";
 import Header from "./Header/Header";
-import InputTodo from "./InputTodo/InputTodo"
+import InputTodo from "./InputTodo/InputTodo";
+import { v4 as uuidv4 } from "uuid";
+
 
 
 
@@ -12,17 +15,17 @@ class Task7 extends Component {
         this.state = { 
             todos: [
                 {
-                    id:1,
+                    id: uuidv4(),
                     title: "Setup development enviroment",
                     completed: true
                 },
                 {
-                    id: 2,
+                    id: uuidv4(),
                     title: "Develop website and add content",
                     completed: false
                   },
                   {
-                    id: 3,
+                    id: uuidv4(),
                     title: "Deploy to live server",
                     completed: false
                   }
@@ -55,21 +58,30 @@ class Task7 extends Component {
         })
     }
     addTodoItem = title => {
-        console.log(title)
-    }
+        const newTodo = {
+          id: uuidv4(),
+          title: title,
+          completed: false
+        };
+        this.setState({
+          todos: [...this.state.todos, newTodo]
+        });
+      };
+      
 
     render() { 
         return ( 
-        <div>
+        <div className="container">
+            <div className="inner">
             <Header />
             <InputTodo
-            addTodoProps={this.addTodoItem} />
+                addTodoProps={this.addTodoItem} />
             <TodoList 
                 todos={this.state.todos}
                 handleChange={this.handleChange}
                 deleteTodoProps={this.delTodo}
             />
-
+            </div>
         </div>
         );
     }
