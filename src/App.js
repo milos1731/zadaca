@@ -10,6 +10,8 @@ import Task6 from "./components/Task6/Task6"
 import Task7 from "./components/Task7/Task7"
 import Task8 from "./components/Task8/Task8"
 import Task9 from "./components/Task9/Task9"
+import Task10 from "./components/Task10/Task10"
+import TaskTest from "./components/TaskTest/TaskTest"
 
 
 
@@ -20,7 +22,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      screen: "Task9"
+      screen: "TaskTest"
     };
   }
   render() {
@@ -39,6 +41,10 @@ class App extends Component {
     if (screen === "Task7") ScreenComponent = Task7;
     if (screen === "Task8") ScreenComponent = Task8;
     if (screen === "Task9") ScreenComponent = Task9;
+    if (screen === "Task10") ScreenComponent = Task10;
+    if (screen === "TaskTest") ScreenComponent = TaskTest;
+
+
 
 
 
@@ -84,10 +90,21 @@ class App extends Component {
             onClick={() => this.setState({ screen: "Task8" })}
           >
             Task8
-          </button><button
+          </button>
+          <button
             onClick={() => this.setState({ screen: "Task9" })}
           >
             Task9
+          </button>
+          <button
+            onClick={() => this.setState({ screen: "Task10" })}
+          >
+            Task10
+          </button>
+          <button
+            onClick={() => this.setState({ screen: "TaskTest" })}
+          >
+            TaskTest
           </button>
           </div>
         <ScreenComponent />
