@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import "./Task9.css"
 
+
 class DatePick extends Component {
     constructor(props){
         super(props);
@@ -18,14 +19,18 @@ class DatePick extends Component {
 
         return ( 
             <div>
-            <input type="date" id="start" name="trip-start"
+            <input
+            className="input-field"
+            type="date" id="start" name="trip-start"
                 value={this.state.startDate}
                 min= {minDate}
 
                 onChange={(event) => this.setState({startDate: event.target.value})}>
             </input>
            
-            <input type="date" id="end" name="trip-end"
+            <input 
+            className="input-field"
+            type="date" id="end" name="trip-end"
             min={this.state.startDate}
             value={this.state.endDate}
             onChange={(event) => this.setState({endDate: event.target.value})}>

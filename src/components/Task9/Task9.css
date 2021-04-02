@@ -5,3 +5,11 @@
 .dates {
   padding: 12px;
 }
+
+.input-field {
+  height: 40px;
+  display: inline-block;
+  position: relative;
+  /* width: 18px; */
+  height: 19px;
+}

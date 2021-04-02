@@ -1,14 +1,23 @@
-import React from "react";
+import React, {Component} from "react";
 import "./SearchBar.css"
 
-const SearchBar = () => {
-    return (
-        <input placeholder="Search your playlist"
-        className="search-bar"
-        type="text"
-        
-         />
-    )
-}
 
+class SearchBar extends Component {
+    render() { 
+        return ( 
+        <div>
+            <input
+            value={this.props.value}
+            onChange={this.props.change}
+            placeholder="Search all tracks"
+            className="search-bar"
+            type="text"
+            />
+            <span className="mglass"></span>
+        </div>
+             );
+    }
+}
+ 
 export default SearchBar;
+
