@@ -11,7 +11,8 @@ import Task7 from "./components/Task7/Task7"
 import Task8 from "./components/Task8/Task8"
 import Task9 from "./components/Task9/Task9"
 import Task10 from "./components/Task10/Task10"
-import TaskTest from "./components/TaskTest/TaskTest"
+import Task11  from "./components/Task11/Task11"
+
 
 
 
@@ -42,7 +43,7 @@ class App extends Component {
     if (screen === "Task8") ScreenComponent = Task8;
     if (screen === "Task9") ScreenComponent = Task9;
     if (screen === "Task10") ScreenComponent = Task10;
-    if (screen === "TaskTest") ScreenComponent = TaskTest;
+    if (screen === "Task11") ScreenComponent = Task11;
 
 
 
@@ -102,9 +103,9 @@ class App extends Component {
             Task10
           </button>
           <button
-            onClick={() => this.setState({ screen: "TaskTest" })}
+            onClick={() => this.setState({ screen: "Task11" })}
           >
-            TaskTest
+            Task11
           </button>
           </div>
         <ScreenComponent />
