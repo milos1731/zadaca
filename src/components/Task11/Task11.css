@@ -1,21 +1,28 @@
 .start-input {
   margin: auto;
-  height: 20px;
-  border: 1px solid black;
-  background-color: #eee;
-  color: #444;
+  height: 30px;
+  border: 1px solid rgb(231, 193, 193);
+  border-radius: 4px;
+  background-color: white;
+  color: rgb(196, 164, 164);
   cursor: pointer;
+  font-size: 22px;
+  width: 50%;
 }
 
 .calendar {
-  width: 220px;
+  width: 300px;
   height: 230px;
-  background-color: rgb(124, 159, 212);
-  margin: auto;
+  /* background-color: white; */
+  border: 1px solid rgb(231, 193, 193);
+  margin: 12px auto;
+  padding-top: 12px;
+  border-radius: 4px;
 }
 .calendar .current-date {
-  color: purple;
-  font-size: 14px;
+  /* color: purple; */
+  font-size: 16px;
+  font-weight: bold;
   margin: auto;
 }
 
@@ -24,10 +31,10 @@
   display: flex;
   margin: 0 auto;
   text-align: center;
-  width: 90%;
+
+  width: 100%;
 }
 .days {
-  color: rebeccapurple;
   margin-top: 16px;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
@@ -37,17 +44,30 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: rgb(145, 93, 93);
   padding: 6px;
   cursor: pointer;
+}
+.day:hover {
+  background-color: cornsilk;
 }
 
 .date-picker {
   display: flex;
   margin: auto;
-  width: 30%;
+  width: 47%;
 }
 .tabs {
   padding: 12px;
   width: 100%;
+}
+.left-right-button {
+  background-color: white;
+  border: 1px solid rgb(231, 193, 193);
+  height: 26px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.left-right-button:hover {
+  border: 1px solid gray;
 }
