@@ -1,0 +1,61 @@
+.entire {
+  display: flex;
+  width: 60%;
+  height: 85vh;
+  margin: auto;
+  margin-top: 2em;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+.side-bar {
+  background-color: #400d40;
+  width: 30%;
+  color: #dfd9d9;
+  font-size: 14px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  text-align: left;
+}
+
+.chat-area {
+  background-color: white;
+  width: 70%;
+  border-radius: 8px;
+  position: relative;
+}
+
+.direct-messages {
+  cursor: pointer;
+  padding: 12px;
+}
+
+.top-bar {
+  height: 36px;
+  width: 100%;
+  border-bottom: solid 1px black;
+  text-align: left;
+  padding-top: 6px;
+  margin-top: 6px;
+}
+.channels {
+  cursor: pointer;
+  padding: 12px;
+}
+.content {
+  padding: 12px;
+  cursor: pointer;
+}
+.messages {
+  width: 100%;
+}
+.text-input {
+  border: 1px solid gray;
+  border-radius: 4px;
+  margin: 0 auto;
+  width: 95%;
+  height: 36px;
+  text-align: left;
+  bottom: 12px;
+  left: 12px;
+  position: absolute;
+}

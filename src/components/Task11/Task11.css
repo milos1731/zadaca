@@ -1,0 +1,53 @@
+.start-input {
+  margin: auto;
+  height: 20px;
+  border: 1px solid black;
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+}
+
+.calendar {
+  width: 220px;
+  height: 230px;
+  background-color: rgb(124, 159, 212);
+  margin: auto;
+}
+.calendar .current-date {
+  color: purple;
+  font-size: 14px;
+  margin: auto;
+}
+
+.calendar-nav {
+  justify-content: space-between;
+  display: flex;
+  margin: 0 auto;
+  text-align: center;
+  width: 90%;
+}
+.days {
+  color: rebeccapurple;
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.day {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 6px;
+  cursor: pointer;
+}
+
+.date-picker {
+  display: flex;
+  margin: auto;
+  width: 30%;
+}
+.tabs {
+  padding: 12px;
+  width: 100%;
+}

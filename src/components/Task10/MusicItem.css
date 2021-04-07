@@ -43,12 +43,13 @@
   margin-right: 6px;
   cursor: pointer;
 }
+.thumbs:disabled {
+  color: black;
+  background-color: red;
+}
+
 .like-button {
   color: gray;
   margin-top: 16px;
-
   margin-right: 6px;
-}
-.like-button:disabled {
-  opacity: 0.5;
 }

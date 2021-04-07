@@ -1,29 +1,24 @@
-import React, {Component} from "react";
-import './App.css';
-import Task1 from "./components/Task1/Task1"
-import Task1_1 from "./components/Task1_1/Task1_1"
-import Task2 from "./components/Task2/Task2"
-import Task3 from "./components/Task3/Task3"
-import Task4 from "./components/Task4/Task4"
-import Task5 from "./components/Task5/Task5"
-import Task6 from "./components/Task6/Task6"
-import Task7 from "./components/Task7/Task7"
-import Task8 from "./components/Task8/Task8"
-import Task9 from "./components/Task9/Task9"
-import Task10 from "./components/Task10/Task10"
-import Task11  from "./components/Task11/Task11"
-
-
-
-
-
-
+import React, { Component } from "react";
+import "./App.css";
+import Task1 from "./components/Task1/Task1";
+import Task1_1 from "./components/Task1_1/Task1_1";
+import Task2 from "./components/Task2/Task2";
+import Task3 from "./components/Task3/Task3";
+import Task4 from "./components/Task4/Task4";
+import Task5 from "./components/Task5/Task5";
+import Task6 from "./components/Task6/Task6";
+import Task7 from "./components/Task7/Task7";
+import Task8 from "./components/Task8/Task8";
+import Task9 from "./components/Task9/Task9";
+import Task10 from "./components/Task10/Task10";
+import Task11 from "./components/Task11/Task11";
+import Task12 from "./components/Task12/Task12";
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      screen: "Task10"
+      screen: "Task11",
     };
   }
   render() {
@@ -44,70 +39,51 @@ class App extends Component {
     if (screen === "Task9") ScreenComponent = Task9;
     if (screen === "Task10") ScreenComponent = Task10;
     if (screen === "Task11") ScreenComponent = Task11;
-
-
-
-
-
-
-    
+    if (screen === "Task12") ScreenComponent = Task12;
 
     return (
       <div className="App">
         <div>
-        <button onClick={() => this.setState({ screen: "Task1" })}>
+          <button onClick={() => this.setState({ screen: "Task1" })}>
             Task1
           </button>
           <button onClick={() => this.setState({ screen: "Task1_1" })}>
             Task1_1
           </button>
-        <button onClick={() => this.setState({ screen: "Task2" })}>
+          <button onClick={() => this.setState({ screen: "Task2" })}>
             Task2
           </button>
           <button onClick={() => this.setState({ screen: "Task3" })}>
             Task3
           </button>
-          <button
-            onClick={() => this.setState({ screen: "Task4" })}
-          >
+          <button onClick={() => this.setState({ screen: "Task4" })}>
             Task4
           </button>
-          <button
-            onClick={() => this.setState({ screen: "Task5" })}
-          >
+          <button onClick={() => this.setState({ screen: "Task5" })}>
             Task5
           </button>
-          <button
-            onClick={() => this.setState({ screen: "Task6" })}
-          >
+          <button onClick={() => this.setState({ screen: "Task6" })}>
             Task6
           </button>
-          <button
-            onClick={() => this.setState({ screen: "Task7" })}
-          >
+          <button onClick={() => this.setState({ screen: "Task7" })}>
             Task7
           </button>
-          <button
-            onClick={() => this.setState({ screen: "Task8" })}
-          >
+          <button onClick={() => this.setState({ screen: "Task8" })}>
             Task8
           </button>
-          <button
-            onClick={() => this.setState({ screen: "Task9" })}
-          >
+          <button onClick={() => this.setState({ screen: "Task9" })}>
             Task9
           </button>
-          <button
-            onClick={() => this.setState({ screen: "Task10" })}
-          >
+          <button onClick={() => this.setState({ screen: "Task10" })}>
             Task10
           </button>
-          <button
-            onClick={() => this.setState({ screen: "Task11" })}
-          >
+          <button onClick={() => this.setState({ screen: "Task11" })}>
             Task11
           </button>
-          </div>
+          <button onClick={() => this.setState({ screen: "Task12" })}>
+            Task12
+          </button>
+        </div>
         <ScreenComponent />
       </div>
     );
@@ -115,4 +91,3 @@ class App extends Component {
 }
 
 export default App;
-
