@@ -1,0 +1,75 @@
+.side-bar-top {
+  height: 40px;
+  padding: 20px 20px 0px 18px;
+  font-weight: bold;
+  color: white;
+  border-bottom: 1px solid rgb(51, 49, 49);
+  border-top: 1px solid rgb(51, 49, 49);
+}
+.side-bar-top:hover {
+  background-color: #350d36;
+  cursor: pointer;
+}
+
+.side-bar {
+  background-color: #3f0e40;
+  width: 23%;
+  color: #dfd9d9;
+  font-size: 14px;
+  text-align: left;
+  height: 45vw;
+  color: white;
+}
+.arrow {
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 2px;
+  color: white;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+.writing {
+  background-color: #ffffff;
+  color: #3f0e40;
+  fill: #3f0e40;
+  border-radius: 30%;
+  float: right;
+  padding-right: 0;
+}
+.side-bar-items {
+  padding: 6px 0px 6px 12px;
+  color: #cfc3cf;
+  text-align: left;
+}
+.side-bar-items:hover {
+  background-color: #350d36;
+  cursor: pointer;
+}
+.side-bar-icon {
+  padding-right: 12px;
+}
+
+.side-bar-items-channels {
+  padding-top: 20px;
+  padding-left: 12px;
+  cursor: pointer;
+  color: #dfd9d9;
+}
+.side-bar-items-channels:hover {
+  background-color: #350d36;
+}
+
+.content {
+  padding-left: 32px;
+
+  color: #dfd9d9;
+}
+
+.content-name {
+  padding-top: 12px;
+}
+.avatar {
+  height: 18px;
+  border-radius: 20%;
+}
