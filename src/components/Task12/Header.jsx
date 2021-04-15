@@ -23,7 +23,7 @@ const Header = () => {
       </div>
       <div className="header-right">
         <FontAwesomeIcon icon={faQuestionCircle} />
-        <img className="avatar" src={image} />
+        <img className="header-avatar" src={image} />
       </div>
     </div>
   );

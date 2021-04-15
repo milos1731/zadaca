@@ -1,6 +1,7 @@
 .side-bar-top {
-  height: 40px;
+  height: 7%;
   padding: 20px 20px 0px 18px;
+
   font-weight: bold;
   color: white;
   border-bottom: 1px solid rgb(51, 49, 49);
@@ -13,12 +14,14 @@
 
 .side-bar {
   background-color: #3f0e40;
-  width: 23%;
+  width: 23vw;
   color: #dfd9d9;
   font-size: 14px;
   text-align: left;
-  height: 45vw;
+  height: 95vh;
+
   color: white;
+  font-family: "lato";
 }
 .arrow {
   border: solid white;
@@ -41,23 +44,22 @@
   padding: 6px 0px 6px 12px;
   color: #cfc3cf;
   text-align: left;
+  display: flex;
 }
 .side-bar-items:hover {
   background-color: #350d36;
   cursor: pointer;
 }
-.side-bar-icon {
-  padding-right: 12px;
-}
 
 .side-bar-items-channels {
   padding-top: 20px;
-  padding-left: 12px;
+  padding-left: 16px;
   cursor: pointer;
   color: #dfd9d9;
 }
-.side-bar-items-channels:hover {
-  background-color: #350d36;
+.side-bar-icons {
+  padding-right: 6px;
+  width: 20px;
 }
 
 .content {
@@ -68,8 +70,13 @@
 
 .content-name {
   padding-top: 12px;
+  display: flex;
 }
+
 .avatar {
   height: 18px;
-  border-radius: 20%;
+  border-radius: 4px;
+}
+.name {
+  padding-left: 8px;
 }

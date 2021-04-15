@@ -1,0 +1,41 @@
+.input-div {
+  width: 95%;
+  height: 2.5vw;
+  border-radius: 4px;
+  display: flex;
+  border: 1px solid rgb(51, 49, 49);
+  font-family: "lato";
+  text-align: left;
+  color: #dfd9d9;
+  position: absolute;
+  bottom: 14px;
+  margin: auto;
+  justify-content: space-between;
+  margin-left: 24px;
+}
+
+.input-message {
+  color: #dfd9d9;
+  padding-left: 6px;
+}
+.input-left {
+  display: flex;
+  padding: 6px;
+  color: teal;
+}
+
+.input-right {
+  display: flex;
+  padding: 8px;
+}
+.input-right-icons {
+  padding: 0 12px 0;
+  font-size: 14px;
+  color: teal;
+}
+.real-input {
+  border: none;
+  font-family: "lato";
+  width: 50vw;
+  outline: none;
+}

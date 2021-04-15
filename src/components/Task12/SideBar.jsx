@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./SideBar.css";
+import "./lato.ttf";
 import ivor from "./ivor.png";
 import filip from "./filip.jpeg";
 import slackbot from "./slackbot.png";
@@ -48,19 +49,27 @@ class SideBar extends Component {
             </svg>
           </div>
           <div className="side-bar-items">
-            <FontAwesomeIcon className="side-bar-icon" icon={faCommentDots} />
+            <div className="side-bar-icons">
+              <FontAwesomeIcon icon={faCommentDots} />
+            </div>
             Threads
           </div>
           <div className="side-bar-items">
-            <FontAwesomeIcon className="side-bar-icon" icon={faAt} />
+            <div className="side-bar-icons">
+              <FontAwesomeIcon icon={faAt} />
+            </div>
             Mentions & reactions
           </div>
           <div className="side-bar-items">
-            <FontAwesomeIcon className="side-bar-icon" icon={faBookmark} />
+            <div className="side-bar-icons">
+              <FontAwesomeIcon icon={faBookmark} />
+            </div>
             Saved items
           </div>
           <div className="side-bar-items">
-            <FontAwesomeIcon className="side-bar-icon" icon={faEllipsisV} />
+            <div className="side-bar-icons">
+              <FontAwesomeIcon icon={faEllipsisV} />
+            </div>
             More
           </div>
           <div
@@ -73,8 +82,8 @@ class SideBar extends Component {
             }
           >
             <FontAwesomeIcon
-              className="side-bar-icon"
-              icon={activeChannels ? faCaretRight : faSortDown}
+              className="side-bar-icons"
+              icon={activeChannels ? faSortDown : faCaretRight}
             />
             Channels
           </div>
@@ -100,8 +109,8 @@ class SideBar extends Component {
             className="side-bar-items-channels"
           >
             <FontAwesomeIcon
-              className="side-bar-icon"
-              icon={activeMessages ? faCaretRight : faSortDown}
+              className="side-bar-icons"
+              icon={activeMessages ? faSortDown : faCaretRight}
             />
             Direct messages
           </div>
@@ -112,20 +121,21 @@ class SideBar extends Component {
                 onClick={() => this.setMessage("ivorano")}
               >
                 <img className="avatar" src={ivor} />
-                ivorjugo
+                <div className="name"> ivorjugo</div>
               </div>
               <div
                 className="content-name"
                 onClick={() => this.setMessage("filipjovakaric")}
               >
                 <img className="avatar" src={filip} />
-                filipjovakaric
+                <div className="name"> filipjovakaric</div>
               </div>
               <div
                 className="content-name"
                 onClick={() => this.setMessage("Slackbot")}
               >
                 <img className="avatar" src={slackbot} />
+                <div className="name"> Slackbot</div>
                 Slackbot
               </div>
             </div>

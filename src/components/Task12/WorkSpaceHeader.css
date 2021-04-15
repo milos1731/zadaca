@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "lato";
+  src: local("lato"), url(./lato.ttf) format("woff");
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+
+.work-space-header {
+  display: flex;
+  justify-content: space-between;
+  height: 7%;
+  background-color: white;
+  text-align: left;
+  padding: 20px 20px 0px 18px;
+  border-bottom: 1px solid gray;
+}
+.work-space-header-left {
+  display: flex;
+}
+.header-icon {
+  padding: 8px 0px;
+  font-size: 10px;
+  color: #007a5a;
+}
+.header-star-icon {
+  padding: 6px 0px 0 8px;
+  font-size: 12px;
+}
+.header-name {
+  color: black;
+  padding: 4px 0px 0px 8px;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: "lato";
+}
+/* .header-info-icon {
+  float: right;
+} */

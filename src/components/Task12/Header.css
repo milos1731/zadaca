@@ -1,7 +1,7 @@
 .header {
   display: flex;
   background-color: #350d36;
-  height: 32px;
+  height: 5vh;
 }
 
 .header-left {
@@ -40,7 +40,7 @@
   justify-content: space-between;
 }
 
-.avatar {
+.header-avatar {
   height: 26px;
   padding-right: 12px;
 }

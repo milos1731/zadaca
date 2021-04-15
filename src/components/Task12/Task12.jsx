@@ -2,6 +2,10 @@ import React, { Component } from "react";
 import "./Task12.css";
 import Header from "./Header";
 import SideBar from "./SideBar";
+import MessageInput from "./MessageInput";
+import WorkSpaceHeader from "./WorkSpaceHeader";
+import "./lato.ttf";
+import WorkSpace from "./WorkSpace";
 
 class Task12 extends Component {
   constructor(props) {
@@ -18,7 +22,14 @@ class Task12 extends Component {
     return (
       <div className="entire">
         <Header />
-        <SideBar />
+
+        <div className="sidebar-workspace">
+          <SideBar />
+          <div className="right">
+            {/* <WorkSpaceHeader /> */}
+            <WorkSpace />
+          </div>
+        </div>
 
         {/* <div className="chat-area">
           <div className="top-bar">{this.state.currentMessage}</div>
