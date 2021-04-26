@@ -20,7 +20,6 @@
   text-align: left;
   height: 95vh;
 
-  color: white;
   font-family: "lato";
 }
 .arrow {
@@ -71,6 +70,7 @@
 .content-name {
   padding-top: 12px;
   display: flex;
+  cursor: pointer;
 }
 
 .avatar {
@@ -79,4 +79,5 @@
 }
 .name {
   padding-left: 8px;
+  cursor: pointer;
 }

@@ -1,5 +1,5 @@
 .input-div {
-  width: 95%;
+  width: 90%;
   height: 2.5vw;
   border-radius: 4px;
   display: flex;
@@ -17,16 +17,19 @@
 .input-message {
   color: #dfd9d9;
   padding-left: 6px;
+  width: 100%;
 }
 .input-left {
   display: flex;
   padding: 6px;
   color: teal;
+  width: 100%;
 }
 
 .input-right {
   display: flex;
   padding: 8px;
+  width: 30%;
 }
 .input-right-icons {
   padding: 0 12px 0;
@@ -36,6 +39,15 @@
 .real-input {
   border: none;
   font-family: "lato";
-  width: 50vw;
+
   outline: none;
+}
+.submit-button {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.input-div {
+  width: 90%;
 }

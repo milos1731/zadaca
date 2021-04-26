@@ -2,40 +2,47 @@ import React, { Component } from "react";
 import "./Task12.css";
 import Header from "./Header";
 import SideBar from "./SideBar";
-import MessageInput from "./MessageInput";
-import WorkSpaceHeader from "./WorkSpaceHeader";
+import Details from "./Details";
 import "./lato.ttf";
 import WorkSpace from "./WorkSpace";
 
 class Task12 extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      current: "filipjovakaric",
+      showDetails: false,
+    };
   }
-
-  setMessage = (currentMessage) => {
+  handleDetails = () => {
     this.setState({
-      currentMessage,
+      showDetails: !this.state.showDetails,
+    });
+  };
+  handleX = () => {
+    this.setState({
+      showDetails: false,
     });
   };
 
   render() {
+    console.log(this.state.showDetails);
     return (
       <div className="entire">
         <Header />
 
         <div className="sidebar-workspace">
-          <SideBar />
+          <SideBar parentCallback={this.callbackFunction} />
           <div className="right">
-            {/* <WorkSpaceHeader /> */}
-            <WorkSpace />
+            <WorkSpace
+              handleDetails={this.handleDetails}
+              current={this.state.current}
+            />
           </div>
+          {this.state.showDetails && (
+            <Details handleX={this.handleX} current={this.state.current} />
+          )}
         </div>
-
-        {/* <div className="chat-area">
-          <div className="top-bar">{this.state.currentMessage}</div>
-          <div className="messages"></div>
-          <input className="text-input" type="text" placeholder="Message" />
-        </div> */}
       </div>
     );
   }

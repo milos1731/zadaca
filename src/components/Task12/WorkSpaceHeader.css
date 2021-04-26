@@ -32,6 +32,8 @@
   font-weight: bold;
   font-size: 15px;
   font-family: "lato";
+  cursor: pointer;
+  margin: 0;
 }
 /* .header-info-icon {
   float: right;

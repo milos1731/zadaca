@@ -20,17 +20,12 @@ class SideBar extends Component {
     this.state = {
       areChannelsOpen: false,
       areMessagesOpen: false,
-      currentChannel: "",
-      currentMessage: "",
+
       activeChannel: false,
       activeMessages: false,
     };
   }
-  setChannel = (currentChannel) => {
-    this.setState({
-      currentChannel,
-    });
-  };
+
   render() {
     const {
       activeChannels,
@@ -91,12 +86,22 @@ class SideBar extends Component {
             <div className="content">
               <div
                 className="content-name"
-                onClick={() => this.setChannel("General")}
+                onClick={() => this.props.parentCallback("#general")}
               >
                 # general
               </div>
-              <div className="content-name"># random</div>
-              <div className="content-name"># meetup</div>
+              <div
+                onClick={() => this.props.parentCallback("#random")}
+                className="content-name"
+              >
+                # random
+              </div>
+              <div
+                onClick={() => this.props.parentCallback("#meetup")}
+                className="content-name"
+              >
+                # meetup
+              </div>
             </div>
           )}
           <div
@@ -118,25 +123,25 @@ class SideBar extends Component {
             <div className="content">
               <div
                 className="content-name"
-                onClick={() => this.setMessage("ivorano")}
+                onClick={() => this.props.parentCallback("ivorano")}
               >
                 <img className="avatar" src={ivor} />
                 <div className="name"> ivorjugo</div>
               </div>
+
               <div
                 className="content-name"
-                onClick={() => this.setMessage("filipjovakaric")}
+                onClick={() => this.props.parentCallback("filipjovakaric")}
               >
                 <img className="avatar" src={filip} />
                 <div className="name"> filipjovakaric</div>
               </div>
               <div
                 className="content-name"
-                onClick={() => this.setMessage("Slackbot")}
+                onClick={() => this.props.parentCallback("Slackbot")}
               >
                 <img className="avatar" src={slackbot} />
                 <div className="name"> Slackbot</div>
-                Slackbot
               </div>
             </div>
           )}

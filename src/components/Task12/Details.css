@@ -1,0 +1,96 @@
+@font-face {
+  font-family: "lato";
+  src: local("lato"), url(./lato.ttf) format("woff");
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+}
+
+.details {
+  text-align: left;
+  font-family: lato;
+  width: 50%;
+  border-left: 1px solid gray;
+}
+.details-top {
+  padding-top: 20px 20px 0px 18px;
+}
+.details-details {
+  font-weight: bold;
+  font-size: 14px;
+}
+.details-name {
+  font-size: 13px;
+  padding-top: 2px;
+  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+}
+.budjo {
+  padding: 12px 20px 8px 18px;
+  height: 7%;
+  border-bottom: 1px solid gray;
+
+  display: flex;
+  justify-content: space-between;
+}
+.close-details {
+  cursor: pointer;
+  padding-top: 12px;
+  font-size: 18px;
+}
+.details-center {
+  margin: auto;
+  text-align: center;
+  padding-bottom: 32px;
+  border-bottom: 1px solid gray;
+}
+.details-image {
+  height: 130px;
+  margin-top: 18px;
+  border-radius: 6px;
+}
+.details-name-center {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  display: flex;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+}
+.details-circle {
+  font-size: 11px;
+  color: tomato;
+  margin: 0;
+  padding: 6px 0 0 6px;
+}
+.detail-icons {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 14px;
+  width: 50%;
+  margin: auto;
+  color: rgb(68, 64, 64);
+  margin-top: 12px;
+}
+.find-call-more {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  background-color: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+}
+
+.details-icon {
+  padding-top: 10px;
+}
+
+.icon-text {
+  margin-top: 14px;
+  font-size: 14px;
+}
+
+.details-bottom {
+  height: 45px;
+
+  border-bottom: 1px solid gray;
+  padding: 12px 0 0 12px;
+}

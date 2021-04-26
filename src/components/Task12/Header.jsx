@@ -2,11 +2,7 @@ import React from "react";
 import "./Header.css";
 import image from "./budjo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faClock,
-  faQuestion,
-  faQuestionCircle,
-} from "@fortawesome/free-solid-svg-icons";
+import { faClock, faQuestionCircle } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   return (
