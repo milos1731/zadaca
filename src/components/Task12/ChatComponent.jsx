@@ -12,7 +12,12 @@ class ChatComponent extends Component {
           </div>
           <div>
             <div className="name-message">
-              <div className="slack-name">{item.name} </div>
+              <div
+                onClick={this.props.showCardComponent}
+                className="slack-name"
+              >
+                {item.name}{" "}
+              </div>
               <div className="message-time">{item.time}</div>
             </div>
             <div className="slack-message">{item.message}</div>

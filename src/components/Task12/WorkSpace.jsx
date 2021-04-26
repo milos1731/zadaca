@@ -27,6 +27,7 @@ class WorkSpace extends Component {
       dataImg: Data.map((i) => i.image),
       dateTime: Data.map((i) => i.time),
       stateData: [...Data],
+      showComponent: false,
     };
   }
 
@@ -47,6 +48,11 @@ class WorkSpace extends Component {
     });
   };
 
+  showCardComponent = () => {
+    this.setState({
+      showComponent: !this.state.showComponent,
+    });
+  };
   render() {
     const data = this.state.stateData;
     console.log({ data });
@@ -58,11 +64,14 @@ class WorkSpace extends Component {
           handleDetails={this.props.handleDetails}
           current={this.props.current}
         />
-        {/* <PersonCardComponent /> */}
+        {this.state.showComponent && <PersonCardComponent />}
         <div className="chat-details">
           <div className="chat-component">
             {data.map((item) => (
-              <ChatComponent item={item} />
+              <ChatComponent
+                showCardComponent={this.showCardComponent}
+                item={item}
+              />
             ))}
             <MessageInput addChatProps={this.addTextChat} />
           </div>
