@@ -8,8 +8,9 @@ class Button extends Component {
   }
 
   render() {
-    const { color } = this.props;
-    return <button className={`btn ${color}`}>Hello</button>;
+    const { color, size, primary } = this.props;
+
+    return <button className={`btn ${color} ${size} ${primary}`}>Hello</button>;
   }
 }
 

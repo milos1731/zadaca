@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "./Details.css";
 import filip from "./filip.jpeg";
+
+import slackbot from "./slackbot.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCircle,
@@ -23,10 +25,10 @@ class Details extends Component {
             X
           </div>
         </div>
-        <div className="details-center">
-          <img className="details-image" src={filip} />
+        <div onClick={this.props.handleImage} className="details-center">
+          <img className="details-image" src={this.props.currentImage} />
           <div className="details-name-center">
-            Filip Jovakarić
+            {this.props.current}
             <FontAwesomeIcon className="details-circle" icon={faCircle} />
           </div>
           <div className="detail-icons">

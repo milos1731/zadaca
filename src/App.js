@@ -14,12 +14,13 @@ import Task10 from "./components/Task10/Task10";
 import Task11 from "./components/Task11/Task11";
 import Task12 from "./components/Task12/Task12";
 import Task13 from "./components/Task13/Task13";
+import Task14 from "./components/Task14/Task14";
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      screen: "Task12",
+      screen: "Task14",
     };
   }
   render() {
@@ -42,6 +43,7 @@ class App extends Component {
     if (screen === "Task11") ScreenComponent = Task11;
     if (screen === "Task12") ScreenComponent = Task12;
     if (screen === "Task13") ScreenComponent = Task13;
+    if (screen === "Task14") ScreenComponent = Task14;
 
     return (
       <div className="App">
@@ -87,6 +89,9 @@ class App extends Component {
           </button>
           <button onClick={() => this.setState({ screen: "Task13" })}>
             Task13
+          </button>
+          <button onClick={() => this.setState({ screen: "Task14" })}>
+            Task14
           </button>
         </div>
         <ScreenComponent />

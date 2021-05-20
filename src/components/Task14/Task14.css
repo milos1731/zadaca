@@ -1,0 +1,13 @@
+table {
+  width: 100%;
+  font-size: 12px;
+  border-bottom: 1px solid red;
+}
+
+th {
+  width: auto;
+  border-right: 1px solid red;
+  /* padding: 0; */
+  /* margin: 0; */
+  /* border: 1px solid red; */
+}

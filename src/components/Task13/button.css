@@ -1,7 +1,7 @@
-.btn.green {
+.green {
   background-color: green;
 }
-.btn.red {
+.red {
   background-color: red;
 }
 .btn.blue {
@@ -9,4 +9,13 @@
 }
 .yellow {
   background-color: yellow;
+}
+.gray {
+  background-color: gray;
+}
+.black {
+  background-color: black;
+}
+.primary {
+  height: 55px;
 }

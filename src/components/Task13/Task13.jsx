@@ -14,7 +14,9 @@ class Task13 extends Component {
         <Button color="red" />
         <Button color="blue" />
         <Button color="yellow" />
-        <Button color="black" />
+        <Button color="gray" />
+        <Button color="black" size="big" />
+
         <Button primary />
       </div>
     );
