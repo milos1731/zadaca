@@ -1,0 +1,74 @@
+.background {
+  background-image: url(./image.jpg);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form-center {
+  background-color: white;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 40%;
+  height: 92vh;
+  border-radius: 12px;
+}
+.form-title {
+  margin-left: 10%;
+  margin-top: 7%;
+  padding-top: 12px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+  justify-content: left;
+}
+.title-form {
+  text-align: left;
+  margin-top: 10px;
+}
+.title-input {
+  border: none;
+  margin: 0;
+  margin-left: 10%;
+  outline: none;
+  padding-left: 5px;
+  padding-top: 33px;
+}
+
+hr {
+  width: 80%;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+.select-input {
+  border: none;
+  outline: none;
+  margin-left: 10%;
+  width: 80%;
+  color: gray;
+
+  margin-top: 22px;
+}
+
+.option-select-input {
+  padding-left: 22px;
+}
+.p-question {
+  margin-left: 10%;
+  margin-top: 22px;
+  padding-top: 12px;
+  padding-left: 3px;
+  text-decoration: bold;
+}
+.confirm-button {
+  background-color: rgb(64, 186, 235);
+  margin-left: 10%;
+  margin-top: 25px;
+  cursor: pointer;
+  border: none;
+  height: 33px;
+  border-radius: 8px;
+  color: white;
+}
